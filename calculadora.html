@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calc.css">
+    <title>calcular descontos</title>
+</head>
+
+<body>
+    <header>
+        <h1>calcular descontos</h1>
+    </header>
+    <main>
+        <div id="form">
+            <input type="text" id="prod" placeholder="produto">
+            <input type="number" id="valor" placeholder="valor" step="0.01">
+            <input type="number" id="desc" placeholder="percentual de desconto" step="0.01" min="0" max="100">
+
+            <button id="calc" onclick="pegaVal()">Calcular</button>
+        </div>
+
+        <div id="result">
+            <h2>Resultados:</h2>
+
+            <p id="prodRes">Nome do produto:</p>
+            <p id="valDes">Valor de desconto:</p>
+            <p id="valFin">Valor final:</p>
+
+            <button id="resetar" onclick="limpar()">reiniciar</button>
+        </div>
+    </main>
+
+    <script src="js/calc.js"></script>
+
+
+</body>
+
+</html>
